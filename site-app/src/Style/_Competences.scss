@@ -1,0 +1,251 @@
+div {
+        &.Competences {
+                div {
+                        &.filter {
+                                @include center;
+
+                                @media #{$tel} {
+                                        display: none;
+                                }
+
+                                div {
+                                        &.filtertitle {
+                                                @include center;
+                                        }
+
+                                        &.filterbtn {
+                                                @include center;
+                                                display: grid;
+                                                grid-template-columns: repeat(5, 1fr);
+                                                gap: 20px;
+                                                margin-top: 10px;
+                                                justify-content: center;
+                                                justify-items: center;
+
+                                                form {
+                                                        label {
+                                                                input {
+                                                                        position: absolute;
+                                                                        opacity: 0;
+                                                                        height: 0;
+                                                                        width: 0;
+
+                                                                        &:checked {
+                                                                                ~.checkmark {
+                                                                                        @include color(background-color, 10%);
+                                                                                        @include color(--box-shadow-color, 30%);
+                                                                                        box-shadow: inset 0px 0px 30px 30px var(--box-shadow-color);
+                                                                                }
+                                                                        }
+                                                                }
+
+                                                                div {
+                                                                        &.checkmark {
+                                                                                @include color(background-color, 10%);
+                                                                                @include color(--box-shadow-color, 10%);
+                                                                                border-radius: 45px;
+                                                                                box-shadow: outset 0px 0px 10px 10px var(--box-shadow-color);
+                                                                                text-transform: uppercase;
+                                                                                padding: 15px;
+
+                                                                                div {
+
+                                                                                        &.titre {
+                                                                                                display: flex;
+                                                                                                flex-direction: column;
+                                                                                                align-items: center;
+
+                                                                                                p {
+                                                                                                        text-align: center;
+                                                                                                        display: none;
+                                                                                                }
+
+                                                                                                & p:first-child {
+                                                                                                        display: unset;
+                                                                                                }
+                                                                                        }
+
+                                                                                        &.desc {
+                                                                                                display: none;
+                                                                                        }
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                }
+                                        }
+
+                                        &.resetbtn {
+                                                display: grid;
+                                                grid-template-columns: 1fr;
+                                                width: 105%;
+                                                margin-left: 3px;
+                                                margin-top: 10px;
+                                                ;
+
+                                                button {
+                                                        @include color(background-color, 10%);
+                                                        @include color(--box-shadow-color, 10%);
+                                                        border-radius: 45px;
+                                                        box-shadow: outset 0px 0px 10px 10px var(--box-shadow-color);
+                                                        text-transform: uppercase;
+                                                        padding: 10px;
+                                                        border: none;
+                                                        width: 90% !important;
+                                                        @include center;
+
+                                                        &:hover {
+                                                                @include color(background-color, 10%);
+                                                                @include color(--box-shadow-color, 30%);
+                                                                box-shadow: inset 0px 0px 30px 30px var(--box-shadow-color);
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+
+                        &.contentchild {
+                                div {
+                                        &.listwork {
+                                                div {
+                                                        &.infofiltre {
+                                                                margin-top: 10px;
+                                                                margin-bottom: 10px;
+                                                                height: 40px;
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                gap: 10px;
+                                                                justify-content: center;
+                                                                align-items: center;
+
+                                                                @media #{$tel} {
+                                                                        display: none;
+                                                                }
+
+                                                                p {
+                                                                        &.title {
+                                                                                text-transform: uppercase;
+
+                                                                        }
+
+                                                                        &.type {
+                                                                                @include color(background-color, 10%);
+                                                                                @include color(--box-shadow-color, 10%);
+                                                                                border-radius: 45px;
+                                                                                box-shadow: outset 0px 0px 10px 10px var(--box-shadow-color);
+                                                                                text-transform: uppercase;
+                                                                                padding: 10px;
+                                                                                border: none;
+                                                                        }
+                                                                }
+                                                        }
+
+                                                        &.allworks {
+                                                                gap: 10px;
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                flex-wrap: wrap;
+                                                                justify-content: center;
+
+                                                                article {
+                                                                        &.card {
+                                                                                @include color(background-color, 10%);
+                                                                                border-radius: 50px;
+                                                                                text-align: center;
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                width: 320px;
+
+                                                                                div {
+                                                                                        &.cardcontent {
+                                                                                                margin-top: 20px;
+                                                                                                margin-bottom: 20px;
+                                                                                                display: flex;
+                                                                                                flex-direction: column;
+                                                                                                justify-content: space-between;
+                                                                                                height: 100%;
+                                                                                                gap: 10px;
+
+                                                                                                div {
+                                                                                                        &.titre {
+                                                                                                                text-transform: uppercase;
+                                                                                                                display: flex;
+                                                                                                                flex-direction: column;
+                                                                                                                justify-content: center;
+                                                                                                                height: 40px;
+                                                                                                        }
+
+                                                                                                        &.logo {
+                                                                                                                img {
+                                                                                                                        height: 80px;
+                                                                                                                }
+                                                                                                        }
+
+                                                                                                        &.niveaux {
+                                                                                                                margin: 5px 15px;
+
+                                                                                                                div {
+                                                                                                                        &.barmax {
+                                                                                                                                @include color(background-color, 0%);
+                                                                                                                                height: 30px;
+                                                                                                                                border-radius: 50px;
+                                                                                                                                display: flex;
+                                                                                                                                flex-direction: row;
+
+                                                                                                                                div {
+                                                                                                                                        &.barniv {
+                                                                                                                                                @include color(background-color, 20%);
+                                                                                                                                                height: 30px;
+                                                                                                                                                border-top-left-radius: 50px;
+                                                                                                                                                border-bottom-left-radius: 50px;
+                                                                                                                                                display: flex;
+                                                                                                                                                align-items: center;
+                                                                                                                                                justify-content: center;
+                                                                                                                                        }
+                                                                                                                                }
+                                                                                                                        }
+                                                                                                                }
+                                                                                                        }
+
+                                                                                                        &.desc {
+                                                                                                                p {
+                                                                                                                        &.info {
+                                                                                                                                text-transform: capitalize;
+                                                                                                                                margin: auto 10px;
+                                                                                                                        }
+                                                                                                                }
+                                                                                                        }
+
+                                                                                                        &.lien {
+                                                                                                                div {
+                                                                                                                        &.lienitem {
+                                                                                                                                display: flex;
+                                                                                                                                flex-direction: row;
+                                                                                                                                justify-content: center;
+                                                                                                                                gap: 20px;
+
+                                                                                                                                a {
+                                                                                                                                        @include color(background-color, 20%);
+                                                                                                                                        @include color(--box-shadow-color, 20%);
+                                                                                                                                        border-radius: 45px;
+                                                                                                                                        box-shadow: outset 0px 0px 10px 10px var(--box-shadow-color);
+                                                                                                                                        text-transform: capitalize;
+                                                                                                                                        padding: 10px;
+                                                                                                                                        margin-top: 5px;
+                                                                                                                                }
+                                                                                                                        }
+                                                                                                                }
+                                                                                                        }
+                                                                                                }
+                                                                                        }
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+}

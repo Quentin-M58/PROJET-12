@@ -1,0 +1,79 @@
+div {
+        &.header {
+                @include color(background-color, 20%);
+                color: $white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 10px;
+                position: sticky;
+                z-index: 9;
+
+                a {
+
+                        div {
+                                &.title {
+                                        display: flex;
+                                        gap: 10px;
+                                        @include btn-header;
+                                        animation-name: appar;
+                                        animation-duration: 2s;
+                                        animation-timing-function: ease;
+                                        animation-fill-mode: none;
+                                        animation-iteration-count: 1;
+
+                                        p {
+                                                display: flex;
+                                                align-items: center;
+                                                font-size: 40px;
+                                                letter-spacing: 4px;
+                                                height: 50px;
+
+                                                @media #{$tel} {
+                                                        font-size: 25px;
+                                                }
+                                        }
+                                }
+                        }
+
+                        @keyframes appar {
+                                0% {
+                                        box-shadow: none;
+                                        color: grey;
+                                }
+
+                                100% {
+                                        box-shadow: 0px 0px 10px 10px var(--box-shadow-color);
+                                        color: inherit;
+                                }
+                        }
+                }
+
+                button {
+                        display: none;
+                        position: absolute;
+                        left: 10px;
+                        color: $white;
+                        @include color(background-color, 10%);
+                        box-shadow: 0px 0px 10px 10px var(--box-shadow-color);
+                        @include color(--box-shadow-color, 30%);
+                        border-radius: 50px;
+                        border: none;
+                        transition: all 0.5s linear;
+
+                        &:hover,
+                        &:focus {
+                                color: $black;
+                                box-shadow: none;
+                        }
+
+                        span {
+                                font-size: 36px;
+                        }
+
+                        @media #{$tel} {
+                                display: unset;
+                        }
+                }
+        }
+}

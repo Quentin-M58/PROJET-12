@@ -1,0 +1,95 @@
+div {
+        &.error {
+                div {
+                        &.errorcontent {
+                                display: flex;
+                                gap: 15px;
+                                flex-direction: column;
+
+                                p,
+                                a {
+                                        @include center;
+                                }
+
+                                a {
+                                        display: flex;
+                                        @include color(background-color, 10%);
+                                        @include color(--box-shadow-color, 10%);
+                                        border-radius: 45px;
+                                        box-shadow: outset 0px 0px 10px 10px var(--box-shadow-color);
+                                        text-transform: uppercase;
+                                        padding: 20px;
+                                        gap: 10px;
+                                        font-size: 32px;
+                                        animation-name: errorbtn;
+                                        animation-duration: 2s;
+                                        animation-timing-function: ease;
+                                        animation-fill-mode: none;
+                                        animation-iteration-count: infinite;
+                                        text-align: center;
+
+                                        @keyframes errorbtn {
+                                                0% {
+                                                        box-shadow: none;
+                                                        color: grey;
+                                                }
+
+                                                50% {
+                                                        box-shadow: inset 0px 0px 20px 20px var(--box-shadow-color);
+                                                        color: inherit;
+                                                }
+
+                                                100% {
+                                                        box-shadow: none;
+                                                        color: grey;
+                                                }
+                                        }
+                                }
+
+                                p {
+                                        &.emoji {
+
+                                                span {
+                                                        font-size: 200px;
+                                                }
+                                        }
+                                }
+
+                                div {
+                                        &.not {
+                                                @include center;
+                                                display: flex;
+                                                align-items: center;
+                                                gap: 10px;
+
+                                                span {
+                                                        font-size: 100px;
+                                                }
+
+                                                progress {
+                                                        width: 100px;
+                                                }
+
+                                                div {
+                                                        &.disconect {
+                                                                display: flex;
+                                                                align-items: center;
+                                                                position: relative;
+
+                                                                span {
+                                                                        font-size: 100px;
+                                                                }
+
+                                                                progress {
+                                                                        width: 100px;
+                                                                        position: absolute;
+                                                                        z-index: -1000;
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+}

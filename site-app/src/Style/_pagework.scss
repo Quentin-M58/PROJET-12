@@ -1,0 +1,270 @@
+div {
+        &.pagework {
+                div{
+                        &.title{
+                                p{
+                                        color: inherit;
+                                }
+                        }
+                }
+                p {
+                        &.info {
+                                @include center;
+                                margin-bottom: 10px;
+                                text-align: center;
+                        }
+                }
+
+                div {
+                        &.displayimg {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 10px;
+                                align-items: center;
+                                justify-content: center;
+
+                                @media #{$tel} {
+                                        flex-direction: column;
+                                }
+
+                                div {
+                                        &.pc {
+                                                height: 384px;
+                                                width: 612px;
+                                                border-radius: 25px;
+                                                color: black;
+                                                border-top: 7px;
+                                                border-left: 4px;
+                                                border-right: 4px;
+                                                border-bottom: 7px;
+                                                border-style: solid;
+                                                overflow: hidden;
+
+                                                @media #{$tel} {
+                                                        height: 192px;
+                                                        width: 306px;
+                                                }
+
+                                                p {
+                                                        color: white;
+                                                        text-transform: uppercase;
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        height: 100%;
+                                                }
+
+                                                img {
+                                                        min-height: 100%;
+                                                        height: 100%;
+                                                        width: 100%;
+                                                        object-fit: cover;
+                                                        object-position: top;
+                                                        animation-name: pc;
+                                                        animation-duration: 20s;
+                                                        animation-timing-function: linear;
+                                                        animation-fill-mode: none;
+                                                        animation-iteration-count: infinite;
+
+                                                        @keyframes pc {
+                                                                0% {
+                                                                        object-position: top;
+                                                                        opacity: 0;
+                                                                }
+
+                                                                33% {
+                                                                        object-position: top;
+                                                                        opacity: 1;
+                                                                }
+
+                                                                66% {
+                                                                        object-position: bottom;
+                                                                        opacity: 1;
+                                                                }
+
+                                                                99% {
+                                                                        opacity: 0;
+                                                                        display: none;
+                                                                }
+
+                                                                100% {
+                                                                        object-position: bottom;
+                                                                        opacity: 0;
+                                                                        display: none;
+                                                                }
+                                                        }
+                                                }
+                                        }
+
+                                        &.tel {
+                                                height: calc(2 * 163px);
+                                                width: calc(2 * 78px);
+                                                border-radius: 25px;
+                                                color: black;
+                                                border-top: 7px;
+                                                border-left: 4px;
+                                                border-right: 4px;
+                                                border-bottom: 7px;
+                                                border-style: solid;
+                                                overflow: hidden;
+
+                                                p {
+                                                        color: white;
+                                                        text-transform: uppercase;
+                                                        display: flex;
+                                                        flex-direction: row;
+                                                        justify-content: center;
+                                                        align-items: center;
+                                                        height: 100%;
+                                                }
+
+                                                img {
+                                                        min-height: 100%;
+                                                        height: 100%;
+                                                        width: 100%;
+                                                        object-fit: cover;
+                                                        object-position: top;
+                                                        animation-name: tel;
+                                                        animation-duration: 40s;
+                                                        animation-timing-function: ease-in-out;
+                                                        animation-fill-mode: none;
+                                                        animation-iteration-count: infinite;
+
+                                                        @keyframes tel {
+                                                                0% {
+                                                                        object-position: top;
+                                                                        opacity: 0;
+                                                                }
+
+                                                                33% {
+                                                                        object-position: top;
+                                                                        opacity: 1;
+                                                                }
+
+                                                                66% {
+                                                                        object-position: bottom;
+                                                                        opacity: 1;
+                                                                }
+
+                                                                99% {
+                                                                        opacity: 0;
+                                                                        display: none;
+                                                                }
+
+                                                                100% {
+                                                                        object-position: bottom;
+                                                                        opacity: 0;
+                                                                        display: none;
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+
+                        &.info {
+                                margin-top: 20px;
+                                display: flex;
+                                flex-direction: column;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                                gap: 10px;
+
+                                div {
+
+                                        &.desc,
+                                        &.tag,
+                                        &.contrainte,
+                                        &.consigne,
+                                        &.explication,
+                                        &.link {
+                                                display: flex;
+                                                flex-direction: column;
+                                                align-items: center;
+                                                padding: 10px;
+                                                text-align: center;
+                                        }
+
+                                        &.desc {
+                                                color: inherit;
+                                        }
+
+                                        &.tag {
+                                                div {
+                                                        &.infotext {
+                                                                display: flex;
+                                                                flex-direction: row;
+                                                                justify-content: center;
+                                                                gap: 10px;
+
+                                                                a {
+                                                                        text-transform: uppercase;
+                                                                        width: fit-content;
+                                                                        border-radius: 50px;
+                                                                        margin: 10px 0px;
+                                                                        padding: 5px 20px 5px 20px;
+                                                                        @include color(background-color, 10%);
+                                                                        @include color(--box-shadow-color, 30%);
+                                                                        box-shadow: inset 0px 0px 10px 10px var(--box-shadow-color);
+                                                                }
+                                                        }
+                                                }
+                                        }
+
+                                        &.contrainte {
+                                                line-height: 30px;
+                                        }
+
+                                        &.consigne {
+                                                line-height:30px;
+                                        }
+
+                                        &.explication {
+                                                margin: auto 100px;
+
+                                                @media #{$tel} {
+                                                        margin: auto;
+                                                }
+                                        }
+
+                                        &.link {
+                                                color: inherit;
+                                                a {
+                                                                text-transform: uppercase;
+                                                                width: fit-content;
+                                                                border-radius: 50px;
+                                                                margin: 10px 0px;
+                                                                padding: 5px 20px 5px 20px;
+                                                                @include color(background-color, 10%);
+                                                                @include color(--box-shadow-color, 30%);
+                                                                box-shadow: inset 0px 0px 10px 10px var(--box-shadow-color);
+                                                        }
+                                        }
+
+                                        div {
+                                                &.infotitle {
+                                                        text-transform: uppercase;
+                                                        width: fit-content;
+                                                        border-radius: 50px;
+                                                        margin: 10px 0px;
+                                                        padding: 5px 20px 5px 20px;
+                                                        @include color(background-color, 10%);
+                                                        @include color(--box-shadow-color, 30%);
+                                                        box-shadow: inset 0px 0px 10px 10px var(--box-shadow-color);
+                                                }
+
+                                                &.infotext {
+                                                        p {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                align-items: center;
+                                                                text-align-last: center;
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+}

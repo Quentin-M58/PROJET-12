@@ -1,0 +1,312 @@
+div {
+        &.navcontent {
+                display: flex;
+                position: relative;
+                height: calc(100vh - 70px);
+
+                div {
+                        &.nav {
+                                display: flex;
+                                background-color: $black;
+                                z-index: 10;
+                                top: 0px;
+                                transition: width 2s linear;
+                                width: fit-content;
+                                overflow: visible;
+                                position: relative;
+
+                                @media #{$tel} {
+                                        position: absolute;
+                                        overflow: hidden;
+                                        width: 0vw;
+
+                                        &.active {
+                                                width: 100vw;
+                                        }
+                                }
+
+                                button {
+                                        position: absolute;
+                                        right: 0px;
+                                        cursor: default;
+                                        border: none;
+                                        @include color(background-color, 20%);
+                                        box-shadow: 0px 0px 10px 10px var(--box-shadow-color);
+                                        @include color(--box-shadow-color, 30%);
+                                        color: inherit;
+                                        z-index: 10;
+                                        border-radius: 50px;
+                                        display: none;
+
+                                        &:hover,
+                                        &:focus {
+                                                color: $black;
+                                                box-shadow: none;
+                                        }
+
+                                        span {
+                                                font-size: 36px;
+
+                                                &.rotate {
+                                                        transform: rotate(-315deg);
+                                                        transition: transform 2s linear;
+                                                }
+                                        }
+
+                                        @media #{$tel} {
+                                                display: unset;
+                                        }
+                                }
+
+                                div {
+                                        &.navbar {
+                                                display: grid;
+                                                grid-auto-rows: auto;
+                                                padding: 0px 0px 46px 0px;
+                                                background: $navbar;
+                                                width: 44px !important;
+                                                position: absolute;
+                                                z-index: 100;
+                                                top: 0px;
+                                                bottom: 0px;
+                                                transition: width 2s;
+                                                overflow-x: hidden;
+
+                                                &:hover {
+                                                        width: calc(100%) !important;
+                                                }
+
+                                                @media #{$tel} {
+                                                        position: relative;
+                                                        width: 50% !important;
+                                                        overflow-x: visible;
+                                                        padding: 0px;
+                                                        z-index: 0;
+                                                        height: 100vh;
+                                                }
+
+                                                div {
+                                                        &.link {
+                                                                a {
+                                                                        display: flex;
+                                                                        flex-direction: row;
+                                                                        align-items: center;
+                                                                        flex-wrap: nowrap;
+                                                                        gap: 10px;
+                                                                        height: 100%;
+                                                                        padding: 0px 10px;
+                                                                        color: grey;
+
+                                                                        &.active {
+                                                                                background-color: transparent;
+                                                                                color: $white;
+                                                                        }
+
+                                                                        div {
+                                                                                &.text {
+                                                                                        overflow: hidden;
+                                                                                        white-space: nowrap;
+                                                                                        z-index: 6;
+                                                                                        position: relative;
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                }
+                                        }
+
+                                        &.folderviewer {
+                                                position: relative;
+                                                left: 42px;
+                                                @include color(background-color, 10%);
+                                                width: fit-content !important;
+                                                z-index: 5;
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 0px;
+                                                margin-right: 44px;
+
+                                                @media #{$tel} {
+                                                        width: 50% !important;
+                                                        left: 0px;
+                                                        margin-right: 0px;
+                                                        overflow: hidden;
+                                                }
+
+
+                                                p {
+                                                        &.foldertitle {
+                                                                text-transform: uppercase;
+                                                                padding: 4px 10px 0px;
+                                                                white-space: nowrap;
+
+                                                                @media #{$tel} {
+                                                                        padding-left: 0px;
+                                                                }
+                                                        }
+                                                }
+
+                                                div {
+                                                        &.folder {
+                                                                display: flex;
+                                                                flex-direction: column;
+                                                                gap: 5px;
+
+                                                                @media #{$tel} {
+                                                                        overflow-x: hidden;
+                                                                }
+
+                                                                p {
+                                                                        &.subfoldertitle {
+                                                                                padding: 0px 5px;
+
+                                                                                &::before {
+                                                                                        content: "📂";
+                                                                                }
+
+                                                                                @media #{$tel} {
+                                                                                        padding-left: 0px;
+                                                                                }
+                                                                        }
+                                                                }
+
+                                                                div {
+                                                                        &.subfolder {
+                                                                                gap: 2px;
+                                                                                display: flex;
+                                                                                flex-direction: column;
+                                                                                @include color(background-color, 10%);
+                                                                                width: fit-content;
+
+                                                                                @media #{$tel} {
+                                                                                        overflow-y: auto;
+                                                                                        overflow-x: hidden;
+                                                                                }
+
+                                                                                div {
+                                                                                        &.link {
+
+                                                                                                a {
+                                                                                                        display: flex;
+                                                                                                        padding: 2px 0px 2px 20px;
+                                                                                                        gap: 5px;
+                                                                                                        position: relative;
+                                                                                                        z-index: 11;
+
+                                                                                                        &.active {
+                                                                                                                @include color(background-color, 20%);
+                                                                                                                color: $white;
+                                                                                                        }
+
+                                                                                                        @media #{$tel} {
+                                                                                                                padding-left: 0px;
+                                                                                                                word-break: break-word;
+                                                                                                        }
+
+                                                                                                        div {
+                                                                                                                &.icon {
+                                                                                                                        display: flex;
+                                                                                                                        align-self: center;
+
+                                                                                                                        img {
+                                                                                                                                max-height: 20px;
+
+                                                                                                                                @media #{$tel} {
+                                                                                                                                        max-width: 20px;
+                                                                                                                                }
+                                                                                                                        }
+                                                                                                                }
+
+                                                                                                                &.text {
+                                                                                                                        display: flex;
+                                                                                                                        align-self: center;
+                                                                                                                        white-space: nowrap;
+                                                                                                                        padding-right: 20px;
+                                                                                                                        position: relative;
+                                                                                                                        z-index: 11;
+
+                                                                                                                        @media #{$tel} {
+                                                                                                                                white-space: normal;
+                                                                                                                                padding-right: 10px;
+                                                                                                                        }
+
+                                                                                                                        p {
+                                                                                                                                &:first-letter {
+                                                                                                                                        text-transform: uppercase;
+                                                                                                                                }
+                                                                                                                        }
+                                                                                                                }
+                                                                                                        }
+                                                                                                }
+                                                                                        }
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+
+                        &.content {
+                                position: relative;
+                                overflow-x: hidden !important; //hidden
+                                overflow-y: auto !important;
+                                width: 100%;
+                                height: calc(100vh - 70px) !important;
+
+                                @media #{$tel} {
+                                        height: calc(100vh - 150px) !important;
+                                }
+
+                                >div {
+                                        min-height: calc(100vh - 185px) !important;
+                                        width: 100%;
+                                        margin-bottom: 20px;
+
+                                        div {
+                                                &.title {
+                                                        text-transform: uppercase;
+                                                        @include center;
+                                                        font-size: 35px;
+                                                        letter-spacing: 8px;
+                                                        border-radius: 50px;
+                                                        padding: 5px 12px 5px 20px;
+                                                        margin-top: 5px;
+                                                        margin-bottom: 20px;
+                                                        @include color(background-color, 10%);
+                                                        @include color(--box-shadow-color, 30%);
+                                                        box-shadow: inset 0px 0px 10px 10px var(--box-shadow-color);
+                                                        animation-name: apparbtn;
+                                                        animation-duration: 5s;
+                                                        animation-timing-function: ease;
+                                                        animation-fill-mode: none;
+                                                        animation-iteration-count: 1;
+                                                        text-align: center;
+
+                                                        @media #{$tel} {
+                                                                font-size: 25px;
+                                                        }
+
+                                                        @keyframes apparbtn {
+                                                                0% {
+                                                                        box-shadow: none;
+                                                                        color: grey;
+                                                                }
+
+                                                                100% {
+                                                                        box-shadow: inset 0px 0px 10px 10px var(--box-shadow-color);
+                                                                        color: inherit;
+                                                                }
+                                                        }
+                                                }
+
+                                                &.contentchild {
+                                                        font-size: 18px;
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+}

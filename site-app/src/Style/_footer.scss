@@ -1,0 +1,52 @@
+section {
+        &.footer {
+                width: 100%;
+                @include color(background-color, 20%);
+                padding: 10px 0px;
+                position: relative;
+                bottom: 0px;
+                display: flex;
+                flex-direction: column;
+
+                div {
+                        &.footertitle {
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                                align-items: center;
+                                gap: 5px;
+                                @include center;
+
+
+                                div {
+                                        display: flex;
+                                        flex-direction: row;
+
+                                        a {
+                                                p {
+                                                        background-color: $white;
+                                                        color: $black;
+                                                        padding: 2px;
+
+                                                        &:hover,
+                                                        &:focus {
+                                                                background-color: $black;
+                                                                color: $white;
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+
+                        &.footertxt {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                padding-top: 5px;
+                                text-transform: capitalize;
+                                gap: 20px;
+                                @include center;
+                        }
+                }
+        }
+}

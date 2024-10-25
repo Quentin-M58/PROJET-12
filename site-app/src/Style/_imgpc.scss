@@ -1,0 +1,79 @@
+div {
+        &.imgpageworkpc {
+                position: relative;
+
+                div {
+                        &.arrow {
+                                position: sticky;
+                                top: 50%;
+
+                                div {
+                                        background-color: transparent;
+                                        cursor: default;
+                                        width: min-content;
+                                        overflow: hidden;
+                                        height: fit-content;
+                                        @include color(color, 50%);
+                                        position: absolute;
+                                        top: 50%;
+
+                                        span {
+                                                font-size: 200px;
+                                                width: 100px;
+                                        }
+
+                                        &.left {
+                                                left: 0px;
+                                        }
+
+                                        &.right {
+                                                right: 0px;
+
+                                                span {
+                                                        translate: -50px;
+                                                }
+                                        }
+
+                                        &:hover {
+                                                @include transparent(color);
+
+                                                span {
+                                                        -webkit-text-stroke: 1px black;
+                                                }
+                                        }
+                                }
+                        }
+                }
+
+
+                img {
+                        width: 100%;
+                        position: relative;
+                        top: -100%;
+                        z-index: -5;
+                }
+
+                a {
+                        width: 97%;
+                        @include color(background-color, 10%);
+                        @include color(--box-shadow-color, 10%);
+                        border-radius: 45px;
+                        box-shadow: outset 0px 0px 10px 10px var(--box-shadow-color);
+                        text-transform: uppercase;
+                        padding: 10px;
+                        border: none;
+                        display: flex;
+                        margin: 10px;
+
+                        &:hover {
+                                @include color(background-color, 10%);
+                                @include color(--box-shadow-color, 30%);
+                                box-shadow: inset 0px 0px 30px 30px var(--box-shadow-color);
+                        }
+
+                        p {
+                                @include center;
+                        }
+                }
+        }
+}

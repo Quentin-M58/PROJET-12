@@ -1,0 +1,35 @@
+div {
+        &.Presentation {
+                div {
+                        &.title {
+                                @include center;
+                        }
+
+                        &.contentchild {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+                                margin-top: 50px;
+                                margin-left: 20px;
+                                margin-right: 20px;
+
+                                p {
+                                        @include center;
+                                        word-spacing: 4px;
+                                        line-height: 200%;
+                                        text-align: center;
+                                        gap: 20px;
+
+                                        span {
+                                                margin: auto 10px;
+                                                a {
+                                                        text-transform: uppercase;
+                                                        @include btn-link ;
+                                                }
+                                        }
+                                }
+
+                        }
+                }
+        }
+}

@@ -1,0 +1,100 @@
+div {
+        &.home {
+                div {
+
+                        &.contentchild {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 20px;
+
+                                div {
+                                        &.subtitle {
+                                                width: 100%;
+
+                                                p {
+                                                        @include center;
+                                                        @media #{$tel}{
+                                                                text-align-last: center;
+                                                                text-align: center;                                                                
+                                                        }
+
+                                                        span {
+                                                                margin-left: 10px;
+                                                                margin-right: 10px;
+                                                                @media #{$tel}{
+                                                                        line-height: 55px;
+                                                                }
+
+                                                                a {
+                                                                        font-weight: 900;
+                                                                        text-transform: uppercase;
+                                                                        @include btn-link;
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                }
+
+                                p {
+                                        &.text {
+                                                @include center;
+                                        }
+                                }
+
+                                div {
+                                        &.listhome {
+                                                @include center;
+                                                display: flex;
+                                                flex-direction: column;
+                                                gap: 30px;
+                                                text-align: center;
+
+                                                a {
+                                                        &.btnhome {
+                                                                @include btn-link;
+                                                                vertical-align: middle;
+                                                                display: inline-flex;
+                                                                flex-wrap: nowrap;
+                                                                align-items: center;
+                                                                justify-content: center;
+                                                                gap: 10px;
+                                                        }
+                                                }
+                                        }
+                                }
+
+                                p {
+                                        &.contentend {
+                                                @include btn-style;
+                                                text-align: center;
+                                                @include center;
+                                                @include color(background-color, 10%);
+                                                @include color(--box-shadow-color, 30%);
+                                                animation-name: disbtn;
+                                                animation-duration: 5s;
+                                                animation-timing-function: ease;
+                                                animation-fill-mode: none;
+                                                animation-iteration-count: infinite;
+
+                                                @keyframes disbtn {
+                                                        0% {
+                                                                box-shadow: none;
+                                                                color: grey;
+                                                        }
+
+                                                        50% {
+                                                                box-shadow: inset 0px 0px 20px 20px var(--box-shadow-color);
+                                                                color: inherit;
+                                                        }
+
+                                                        100% {
+                                                                box-shadow: none;
+                                                                color: grey;
+                                                        }
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+}

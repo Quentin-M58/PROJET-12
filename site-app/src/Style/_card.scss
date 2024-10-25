@@ -1,0 +1,28 @@
+div {
+        &.Works {
+                div {
+                        &.list {
+                                display: flex;
+                                flex-direction: column;
+                                gap: 10px;
+
+                                article {
+                                        &.card {
+                                                background-color: $card;
+                                                padding: 10px 0px 10px 0px;
+                                                display: flex;
+                                                flex-direction: column;
+
+                                                p {
+                                                        display: flex;
+                                                        position: relative;
+                                                        width: 100%;
+                                                        right: calc(50vh - 50%);
+                                                        color: white;
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+}

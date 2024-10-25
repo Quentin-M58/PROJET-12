@@ -1,0 +1,7 @@
+div.home>div.title>div.content{
+        @container (min-width: 0px){
+                p.bnj {
+                        margin-right: calc(50vw - 50cqw);
+                }
+        }
+}

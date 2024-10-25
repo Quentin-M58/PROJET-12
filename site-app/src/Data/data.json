@@ -1,0 +1,1144 @@
+{
+        "link": [
+                {
+                        "id": 1,
+                        "name": "Acceuil",
+                        "to": "",
+                        "material": "icons",
+                        "icon": "home",
+                        "text": "Une présentation du site et de son developpeur.",
+                        "folder": [
+                                {
+                                        "id": 1,
+                                        "name": "presentation"
+                                }
+                        ]
+                },
+                {
+                        "id": 2,
+                        "name": "Réalisations",
+                        "to": "/works",
+                        "material": "symbols-outlined",
+                        "icon": "bookmark_manager",
+                        "text": "Une présentation de mes projets réalisé lors de mes différentes formations ou de projets personnelle.",
+                        "langage": [
+                                {
+                                        "id": 221,
+                                        "name": "html",
+                                        "value": "html 5"
+                                },
+                                {
+                                        "id": 222,
+                                        "name": "css",
+                                        "value": "css 3"
+                                },
+                                {
+                                        "id": 223,
+                                        "name": "sass",
+                                        "value": "sass"
+                                },
+                                {
+                                        "id": 224,
+                                        "name": "javascript",
+                                        "value": "javascript"
+                                },
+                                {
+                                        "id": 225,
+                                        "name": "powershell",
+                                        "value": "powershell"
+                                },
+                                {
+                                        "id": 225,
+                                        "name": "vba",
+                                        "value": "vba"
+                                }
+                        ],
+                        "module": [
+                                {
+                                        "id": 231,
+                                        "name": "react",
+                                        "value": "react"
+                                },
+                                {
+                                        "id": 232,
+                                        "name": "redux",
+                                        "value": "redux"
+                                },
+                                {
+                                        "id": 233,
+                                        "name": "jest",
+                                        "value": "jest"
+                                }
+                        ],
+                        "folder": [
+                                {
+                                        "id": 21,
+                                        "name": "Riding-cities.html",
+                                        "filtre": [
+                                                "html 5",
+                                                "dev"
+                                        ],
+                                        "projet-id": 2,
+                                        "desc": "d'initiation au language html",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Modifier uniquement le code html"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Ne pas modifier le code css"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Ajouter une section \"les membres fondateurs\" avec nom et photo des fondateurs"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Ajouter un bouton pour le planning des cours des enfants et un bouton pour le planning des cours des adultes"
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "Pour completer ce projet, j'ai modifier le bouton télécharger le planning afin d'avoir deux bouton un pour le planning adulte et un pour le planning enfant. J'ai réaliser ces taches sans modifier le code CSS fournie. "
+                                                }
+                                        ],
+                                        "link": "https://github.com/Quentin-M58/PROJET-2",
+                                        "pc": 1
+                                },
+                                {
+                                        "id": 22,
+                                        "name": "Booki.css",
+                                        "filtre": [
+                                                "css 3",
+                                                "dev"
+                                        ],
+                                        "projet-id": 3,
+                                        "desc": "d'initiation au language css",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Le site doit être Responsive"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Les images doivent être intégrer uniquement via le html"
+                                                },
+                                                {
+                                                        "id": 3,
+                                                        "desc": "Le site doit être valider par le w3c"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Integrer les maquette du site booki"
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "Afin de réussir ce projet, j'ai implementer le code html et css comme demandée sur la maquette avec un responsive design.  "
+                                                }
+                                        ],
+                                        "link": "https://github.com/Quentin-M58/PROJET-3",
+                                        "tel": 1,
+                                        "pc": 1
+                                },
+                                {
+                                        "id": 23,
+                                        "name": "Ohmyfood.sass",
+                                        "filtre": [
+                                                "css 3",
+                                                "dev"
+                                        ],
+                                        "projet-id": 4,
+                                        "desc": "d'initiation au animation css",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Utiliser obligatoirement le langage Sass pour le developper le style du site"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Le site doit être developper en mobile first"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Integrer les maquette du site ohmyfood"
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "Pour intégrer les différentes maquette deu site, j'ai implémenter le code html et css, en utilisant un préprocesseur (sass), avec du responsive design et les différentes animations demandée."
+                                                }
+                                        ],
+                                        "link": "https://github.com/Quentin-M58/PROJET-4",
+                                        "tel": [
+                                                1,
+                                                2
+                                        ],
+                                        "pc": [
+                                                1,
+                                                2
+                                        ]
+                                },
+                                {
+                                        "id": 24,
+                                        "name": "Prin-it.js",
+                                        "filtre": [
+                                                "javascript",
+                                                "dev"
+                                        ],
+                                        "projet-id": 5,
+                                        "desc": "d'initiation au language javascript",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Ajouter le carousel via javascript"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Integrer le carousel au site"
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "Afin de réaliser les demandes du clients, j'ai ajouter défilement des images (carousel) en utilisant du code javascript"
+                                                }
+                                        ],
+                                        "link": "https://github.com/Quentin-M58/PROJET-5",
+                                        "pc": 1
+                                },
+                                {
+                                        "id": 25,
+                                        "name": "Portfolio-Sophie-BLUEL.js",
+                                        "filtre": [
+                                                "javascript",
+                                                "dev"
+                                        ],
+                                        "projet-id": 6,
+                                        "desc": "d'initiation à la gestion de la connexion ainsi que la communication avec une base de données",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Permettre d'effectuer les modification directement sans rechargement de la page et via des boites modale dédiée"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Assurer une bonne pratique de cybersécurité en termes d'erreur lors de la connexion de l'utilisateur"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Developper le portfolio"
+                                                },
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Permettre à l'utilisateur connectée de pouvoir modifier sa galerie"
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "Comme le demande la cliente, j'ai integrer tous le code javascript qui permet à la cliente de modifier en se connectant à une page dédiées, et afficher les différents elements de sa base de données"
+                                                }
+                                        ],
+                                        "link": "https://github.com/Quentin-M58/PROJET-6",
+                                        "pc": [
+                                                1,
+                                                2,
+                                                3,
+                                                4,
+                                                5,
+                                                6
+                                        ]
+                                },
+                                {
+                                        "id": 26,
+                                        "name": "Kasa.react",
+                                        "filtre": [
+                                                "react",
+                                                "javascript",
+                                                "dev"
+                                        ],
+                                        "projet-id": 7,
+                                        "desc": "d'initiation à l'utilisation de la blibliothèque javascript react",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Utiliser react  et react router"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Utiliser obligatoirement le langage Sass pour le developper le style du site"
+                                                },
+                                                {
+                                                        "id": 3,
+                                                        "desc": "Ne pas utiliser de librairie externe à react"
+                                                },
+                                                {
+                                                        "id": 4,
+                                                        "desc": "Les composant doivent être : modulaire, réutilisable et être unique dans chaque fichier"
+                                                },
+                                                {
+                                                        "id": 5,
+                                                        "desc": "Avoir une silder pour les page de présentation des logements qui boucles et si il y a une seul image alors ne pas afficher les fleches de navigation pour le slider"
+                                                },
+                                                {
+                                                        "id": 6,
+                                                        "desc": "Ne pas comporter d'erreur"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Integrer les maquette du site kasa"
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "Pour éffectuer le souhait de l'entreprise, j'ai développer ll'intégralité du code front-end (sans les parties base de données) du site en utilisant un préprocesseur (Sass)."
+                                                }
+                                        ],
+                                        "link": "https://github.com/Quentin-M58/PROJET-7",
+                                        "pc": [
+                                                1,
+                                                2,
+                                                3
+                                        ],
+                                        "tel": [
+                                                1,
+                                                2,
+                                                3
+                                        ]
+                                },
+                                {
+                                        "id": 27,
+                                        "name": "Nina-CARDUCCI.audit",
+                                        "filtre": [
+                                                "react",
+                                                "dev"
+                                        ],
+                                        "projet-id": 8,
+                                        "desc": "d'initiation à la réalisation d'un audite et de l'optimisation",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Réaliser une optimisation : des performances, de l'accessibilité, du SEO"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Réaliser un rapport d'optimisation"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Réaliser une optimisation du site et le référencement SEO ainsi qu'une Optimisation  d'accessibilité du site"
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "Suite à une expertise de son site la cliente, ma demandé de réaliser une optimisation (rendre le site plus rapide à charger) et permettre une meilleur accessibilité et visibilité (optimisation SEO)"
+                                                }
+                                        ],
+                                        "link": "https://github.com/Quentin-M58/PROJET-8",
+                                        "pc": 1
+                                },
+                                {
+                                        "id": 28,
+                                        "name": "724events.jest",
+                                        "filtre": [
+                                                "react",
+                                                "dev",
+                                                "jest"
+                                        ],
+                                        "projet-id": 9,
+                                        "desc": "d'initiation à la résolution de bogue",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Réaliser un Cahier de recette"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Réparer les différents bogues du site"
+                                                },
+                                                {
+                                                        "id": 3,
+                                                        "desc": "Développer et réaliser les tests nécessaires"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Réaliser un débogage du site"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Développer et réaliser les test nécessaires"
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "Suite à l'expertise d'un autre développeur, j'ai éffectuer la résolution des bogues trouver par celui-ci ainsi que la création ds test permettant la vérification du bon fonctionnement du site"
+                                                }
+                                        ],
+                                        "link": "https://github.com/Quentin-M58/PROJET-9",
+                                        "pc": 1
+                                },
+                                {
+                                        "id": 29,
+                                        "name": "Argentbank.redux",
+                                        "filtre": [
+                                                "react",
+                                                "dev",
+                                                "redux"
+                                        ],
+                                        "projet-id": 10,
+                                        "desc": "d'initiation à l'utilisation de redux et swagger",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Réaliser un site responsive"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Utiliser redux pour gerer l'authentification de l'utilisateur"
+                                                },
+                                                {
+                                                        "id": 3,
+                                                        "desc": "Décrire les routes pour les transactions dans l'api swagger"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Integrer les maquette du site argentbank"
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "Comme le demande l'entreprise, j'ai d'abord effectuer la mise en place du site et de la gestion de la connexion des utilisateurs en utilisant un bibliothèque javascript (redux) et ensuite j'ai imaginer les différentes routes pour la gestion des transaction dans Swagger "
+                                                }
+                                        ],
+                                        "link": "https://github.com/Quentin-M58/PROJET-10",
+                                        "pc": [
+                                                1,
+                                                2,
+                                                3,
+                                                4,
+                                                5
+                                        ],
+                                        "tel": 1
+                                },
+                                {
+                                        "id": 210,
+                                        "name": "Qwenta.agilescrum",
+                                        "filtre": [
+                                                "dev"
+                                        ],
+                                        "projet-id": 11,
+                                        "desc": "d'initiation à la methode de travaille agiles scrum",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Réaliser une présentation des spécifications techniques"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Réaliser une présentation du système de veille mis en place"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Réaliser planning du développement du site et la mise en place d'uin sistème de veille"
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "Comme le demande l'entreprise, j'ai d'abord effectuer la mise en place du sytème de veille en utilisant Feedly puis j'ai planifier le développement en utilisant la méthode de travaille souhaiter (agiles scrum) "
+                                                }
+                                        ],
+                                        "link": "https://github.com/Quentin-M58/PROJET-11"
+                                },
+                                {
+                                        "id": 211,
+                                        "name": "quentin-m58.react",
+                                        "filtre": [
+                                                "react",
+                                                "sass",
+                                                "dev"
+                                        ],
+                                        "projet-id": 12,
+                                        "desc": "pour permettre la réalisation de son site portfolio",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Utiliser le responsive design"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Afficher au moins deux projet"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Créer mon site"
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "Ce site est avec react, utilise le préprocesseur sass, utilise un designe responsive et affiche tout les projets réalisée"
+                                                }
+                                        ],
+                                        "link": "https://github.com/Quentin-M58/PROJET-12",
+                                        "pc": [
+                                                1,
+                                                2,
+                                                3,
+                                                4
+                                        ],
+                                        "tel": [
+                                                1,
+                                                2,
+                                                3,
+                                                4
+                                        ]
+                                },
+                                {
+                                        "id": 212,
+                                        "name": "passwordCheck.powershell",
+                                        "filtre": [
+                                                "tech",
+                                                "powershell"
+                                        ],
+                                        "formation": "tech",
+                                        "desc": "De nombreuse fois les utilisateurs rencontré un probléme liée à l'oublie du renouvellement de  leurs mot de passe de session donc il mont confier la tache de réaliser deux script : un qui est executer par le serveur pour récupérer la liste des utilisateur ayant leur expiration de mot de passe dans un certain delai;   un script qui est executer par l'utilisateur qui vient verifier si il est présent sur cette liste et l'informe",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Pouvoir executer sans autorisation nécessaire"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Être executable par tous (sauf les comptes spéciaux)"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Créer un script qui permet au utilisateur d'être mieux averti à l'expiration de leurs mot de passe "
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "De nombreuse fois les utilisateurs rencontré un probléme liée à l'oublie du renouvellement de  leurs mot de passe de session donc il mont confier la tache de réaliser deux script : un qui est executer par le serveur pour récupérer la liste des utilisateur ayant leur expiration de mot de passe dans un certain delai;   un script qui est executer par l'utilisateur qui vient verifier si il est présent sur cette liste et l'informe "
+                                                }
+                                        ],
+                                        "link": "n/a"
+                                },
+                                {
+                                        "id": 213,
+                                        "name": "menu.vba",
+                                        "filtre": [
+                                                "tech",
+                                                "vba"
+                                        ],
+                                        "formation": "tech",
+                                        "desc": "L'entreprise effectuait le relever du choix des menu pour le repas à la main, il mont confier la tache de realiser cette tache avec excel pour rendre cette tache semi automatisé",
+                                        "contrainte": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Creer sous excel"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Être accessible par tous (utilisable par toute session sans besion autorisation special)"
+                                                }
+                                        ],
+                                        "consigne": [
+                                                {
+                                                        "id": 1,
+                                                        "desc": "Créer un tableur pour recuperer les info des repas"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "desc": "Creer un export pdf avec une version total des elements et une version avec total des jours"
+                                                }
+                                        ],
+                                        "explication": [
+                                                {
+                                                        "id": 1,
+                                                        "type": "text",
+                                                        "value": "L'entreprise effectuait le relever du choix des menu pour le repas à la main, il mont confier la tache de realiser cette tache avec excel pour rendre cette tache semi automatisé"
+                                                },
+                                                {
+                                                        "id": 2,
+                                                        "type": "text",
+                                                        "value": "voir si met images explicative"
+                                                }
+                                        ],
+                                        "link": "n/a"
+                                }
+                        ]
+                },
+                {
+                        "id": 3,
+                        "name": "Formations",
+                        "to": "/formations",
+                        "material": "icons",
+                        "icon": "school",
+                        "text": "Une présentation des différentes formations réalisé.",
+                        "formation": [
+                                {
+                                        "id": 31,
+                                        "name": "technicien d'assistance en informatique",
+                                        "titre": "technicien",
+                                        "value": "tech",
+                                        "organisme": "CCI formation Nevers",
+                                        "linkorga": "https://nievre.cci.fr/",
+                                        "link": "n/a",
+                                        "desc": [
+                                                "utilisation des invites de commandes CMD et POWERSHELL",
+                                                "installation et gestion de différents système d'exploitation (windows, linux, Windows server)",
+                                                "installation et gestion d'équipement réseaux (routeur, switch, ...)",
+                                                "méthode de sauvegarde de données",
+                                                "utilisation de logiciel de contrôle à distances",
+                                                "dépannage et assistance informatique"
+                                        ],
+                                        "date": "mars 2022 - septembre 2022"
+                                },
+                                {
+                                        "id": 32,
+                                        "name": "developpeur integrateur WEB",
+                                        "titre": "developpeur",
+                                        "value": "dev",
+                                        "organisme": "Openclassrooms",
+                                        "linkorga": "https://openclassrooms.com/fr",
+                                        "link": "https://openclassrooms.com/fr/paths/900-integrateur-web",
+                                        "desc": [
+                                                "langage HTML 5",
+                                                "langage CSS 3",
+                                                "langage JAVASCRIPT",
+                                                "langage SASS",
+                                                "module REACT",
+                                                "module de test JEST",
+                                                "module REDUX",
+                                                "logiciel éditeur de code VSCODE",
+                                                "systeme de versionning GITHUB",
+                                                "methode de travaille agile scrum"
+                                        ],
+                                        "date": "mars 2024 - novembre 2024"
+                                }
+                        ]
+                },
+                {
+                        "id": 4,
+                        "name": "Compétences",
+                        "to": "/competences",
+                        "material": "icons",
+                        "icon": "psychology",
+                        "text": "Une présentation des différentes compétences acquises.",
+                        "type": [
+                                {
+                                        "id": 411,
+                                        "name": "langue",
+                                        "value": "langue"
+                                },
+                                {
+                                        "id": 412,
+                                        "name": "langage informatique",
+                                        "value": "langage informatique"
+                                },
+                                {
+                                        "id": 413,
+                                        "name": "framework javascript",
+                                        "value": "framework javascript"
+                                },
+                                {
+                                        "id": 414,
+                                        "name": "invite de commande",
+                                        "value": "invite de commande"
+                                },
+                                {
+                                        "id": 415,
+                                        "name": "systeme d'exploitation",
+                                        "value": "os"
+                                },
+                                {
+                                        "id": 416,
+                                        "name": "logiciel",
+                                        "value": "logiciel"
+                                },
+                                {
+                                        "id": 417,
+                                        "name": "systeme versionning",
+                                        "value": "systeme versionning"
+                                },
+                                {
+                                        "id": 418,
+                                        "name": "methode de travaille",
+                                        "value": "methode"
+                                },
+                                {
+                                        "id": 419,
+                                        "name": "dépannage",
+                                        "value": "dépannage"
+                                },
+                                {
+                                        "id": 4110,
+                                        "name": "reseaux",
+                                        "value": "reseaux"
+                                }
+                        ],
+                        "competences": [
+                                {
+                                        "id": 41,
+                                        "type": [
+                                                "langue"
+                                        ],
+                                        "name": "francais",
+                                        "logo": "drapfr",
+                                        "description": "langue maternelle",
+                                        "level": "9",
+                                        "link": [
+                                                {
+                                                        "name": "langue Française",
+                                                        "link": "https://fr.wikipedia.org/wiki/Français"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 42,
+                                        "type": [
+                                                "langue"
+                                        ],
+                                        "name": "Anglais Américain\r\nAnglais Britanniique",
+                                        "logo": "drapengb",
+                                        "description": "seconde langue",
+                                        "level": "6",
+                                        "link": [
+                                                {
+                                                        "name": "langue Anglaise",
+                                                        "link": "https://fr.wikipedia.org/wiki/Anglais"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 43,
+                                        "type": [
+                                                "langue"
+                                        ],
+                                        "name": "allemand",
+                                        "logo": "drapallemand",
+                                        "description": "troisieme langue",
+                                        "level": "3",
+                                        "link": [
+                                                {
+                                                        "name": "langue Allemande",
+                                                        "link": "https://fr.wikipedia.org/wiki/Allemand"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 44,
+                                        "type": [
+                                                "langage informatique"
+                                        ],
+                                        "name": "html 5",
+                                        "logo": "html 5",
+                                        "description": "utilisation du langage HTML 5",
+                                        "level": "8",
+                                        "link": [
+                                                {
+                                                        "name": "language Html",
+                                                        "link": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 45,
+                                        "type": [
+                                                "langage informatique"
+                                        ],
+                                        "name": "css 3",
+                                        "logo": "css 3",
+                                        "description": "utilisation du langage CSS 3",
+                                        "level": "8",
+                                        "link": [
+                                                {
+                                                        "name": "language Css",
+                                                        "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 46,
+                                        "type": [
+                                                "langage informatique"
+                                        ],
+                                        "name": "javascript",
+                                        "logo": "javascript",
+                                        "description": "utilisation du langage JAVASCRIPT",
+                                        "level": "8",
+                                        "link": [
+                                                {
+                                                        "name": "language Javascript",
+                                                        "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 47,
+                                        "type": [
+                                                "langage informatique"
+                                        ],
+                                        "name": "sass",
+                                        "logo": "sass",
+                                        "description": "utilisation du langage SASS",
+                                        "level": "8",
+                                        "link": [
+                                                {
+                                                        "name": "language sass",
+                                                        "link": "https://sass-lang.com/"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 48,
+                                        "type": [
+                                                "framework javascript"
+                                        ],
+                                        "name": "react",
+                                        "logo": "react",
+                                        "description": "utilisation du module REACT",
+                                        "level": "8",
+                                        "link": [
+                                                {
+                                                        "name": "framework React",
+                                                        "link": "https://fr.react.dev/"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 49,
+                                        "type": [
+                                                "framework javascript"
+                                        ],
+                                        "name": "jest",
+                                        "logo": "jest",
+                                        "description": "utilisation du module de test JEST",
+                                        "level": "5",
+                                        "link": [
+                                                {
+                                                        "name": "Framework Jest",
+                                                        "link": "https://jestjs.io/fr/"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 410,
+                                        "type": [
+                                                "framework javascript"
+                                        ],
+                                        "name": "redux",
+                                        "logo": "redux",
+                                        "description": "utilisation du module REDUX",
+                                        "level": "5",
+                                        "link": [
+                                                {
+                                                        "name": "framework Redux",
+                                                        "link": "https://redux.js.org/"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 411,
+                                        "type": [
+                                                "invite de commande",
+                                                "langage informatique"
+                                        ],
+                                        "name": "cmd",
+                                        "logo": "cmd",
+                                        "description": "Utilisation et creation de fichiers de commande sous CMD",
+                                        "level": "8",
+                                        "link": [
+                                                {
+                                                        "name": "invite de commande CMD",
+                                                        "link": "https://learn.microsoft.com/fr-fr/windows-server/administration/windows-commands/cmd"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 412,
+                                        "type": [
+                                                "invite de commande",
+                                                "langage informatique"
+                                        ],
+                                        "name": "powershell",
+                                        "logo": "PowerShell",
+                                        "description": "Utilisation et creation de fichiers de commande sous POWERSHELL ",
+                                        "level": "5",
+                                        "link": [
+                                                {
+                                                        "name": "invite de commande Powershell",
+                                                        "link": "https://learn.microsoft.com/fr-fr/powershell/scripting/overview?view=powershell-7.4"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 413,
+                                        "type": [
+                                                "os"
+                                        ],
+                                        "name": "windows",
+                                        "logo": "windows",
+                                        "description": "Gestion et installation de WINDOWS",
+                                        "level": "5",
+                                        "link": [
+                                                {
+                                                        "name": "windows",
+                                                        "link": "https://www.microsoft.com/fr-fr/windows?r=1"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 414,
+                                        "type": [
+                                                "os"
+                                        ],
+                                        "name": "windows server",
+                                        "logo": "windows",
+                                        "description": "Gestion et installation de WINDOWS SERVER et des différents service (DNS, Active Directory,...)",
+                                        "level": "5",
+                                        "link": [
+                                                {
+                                                        "name": "windows server",
+                                                        "link": "https://www.microsoft.com/fr-fr/windows-server"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 415,
+                                        "type": [
+                                                "os"
+                                        ],
+                                        "name": "linux",
+                                        "logo": "linux",
+                                        "description": "Système d'exploitation LINUX (débian, zorin...) avec ou sans interface graphique",
+                                        "level": "5",
+                                        "link": [
+                                                {
+                                                        "name": "linux",
+                                                        "link": "https://fr.wikipedia.org/wiki/Linux"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 416,
+                                        "type": [
+                                                "logiciel"
+                                        ],
+                                        "name": "logiciel controle\r\na distance",
+                                        "logo": "remotecontrol",
+                                        "description": "Logiciel de contrôle à distance (TEAMVIEWER, ANYDESK...)  ",
+                                        "level": "5",
+                                        "link": [
+                                                {
+                                                        "name": "teamviewer",
+                                                        "link": "https://www.teamviewer.com/fr/"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 417,
+                                        "type": [
+                                                "logiciel"
+                                        ],
+                                        "name": " gimp",
+                                        "logo": "gimp",
+                                        "description": "Logiciel d'édition d'image GIMP",
+                                        "level": "5",
+                                        "link": [
+                                                {
+                                                        "name": "gimp",
+                                                        "link": "https://www.gimp.org/about/"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 418,
+                                        "type": [
+                                                "logiciel"
+                                        ],
+                                        "name": "vscode",
+                                        "logo": "vscode",
+                                        "description": "Logiciel éditeur de code VSCODE ",
+                                        "level": "8",
+                                        "link": [
+                                                {
+                                                        "name": "visual studio code",
+                                                        "link": "https://code.visualstudio.com/"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 419,
+                                        "type": [
+                                                "logiciel"
+                                        ],
+                                        "name": "suite office\r\nSuite libreoffice",
+                                        "logo": "officelibreoffice",
+                                        "description": "Suite de logiciel OFFICE365 et LIBREOFFICE",
+                                        "level": "8",
+                                        "link": [
+                                                {
+                                                        "name": "Office 365",
+                                                        "link": "https://www.office.com/"
+                                                },
+                                                {
+                                                        "name": "libreoffice",
+                                                        "link": "https://fr.libreoffice.org/"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 420,
+                                        "type": [
+                                                "systeme versionning"
+                                        ],
+                                        "name": "github",
+                                        "logo": "github",
+                                        "description": "Systeme de versionning GITHUB",
+                                        "level": "8",
+                                        "link": [
+                                                {
+                                                        "name": "github",
+                                                        "link": "https://github.com/"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 421,
+                                        "type": [
+                                                "methode de travaille"
+                                        ],
+                                        "name": "agile scrum",
+                                        "logo": "agilescrum",
+                                        "description": "methode de travaille agile scrum",
+                                        "level": "3",
+                                        "link": [
+                                                {
+                                                        "name": "méthode agiles scrum",
+                                                        "link": "https://fr.wikipedia.org/wiki/Scrum_(développement)"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 422,
+                                        "type": [
+                                                "reseaux"
+                                        ],
+                                        "name": "équipement reseaux",
+                                        "logo": "reseau",
+                                        "description": "gestion et installation d'équipement réseaux (routeur, switch, ...)",
+                                        "level": "5",
+                                        "link": [
+                                                {
+                                                        "name": "reaux informatique",
+                                                        "link": "https://fr.wikipedia.org/wiki/Équipement_d%27interconnexion_de_réseau_informatique"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 423,
+                                        "type": [
+                                                "methode"
+                                        ],
+                                        "name": "methode de sauvegarde",
+                                        "logo": "sauvegarde",
+                                        "description": "methode de sauvegarde de données",
+                                        "level": "5",
+                                        "link": [
+                                                {
+                                                        "name": "sauvegarde informatique",
+                                                        "link": "https://fr.wikipedia.org/wiki/Sauvegarde_(informatique)"
+                                                }
+                                        ]
+                                },
+                                {
+                                        "id": 424,
+                                        "type": [
+                                                "dépannage"
+                                        ],
+                                        "name": "dépannage",
+                                        "logo": "assistance",
+                                        "description": "dépannage et assistance informatique",
+                                        "level": "5",
+                                        "link": [
+                                                {
+                                                        "name": "Dépannage informatique",
+                                                        "link": "https://fr.wikipedia.org/wiki/Dépannage_informatique"
+                                                }
+                                        ]
+                                }
+                        ]
+                },
+                {
+                        "id": 5,
+                        "name": "Mention légal",
+                        "to": "/terms",
+                        "material": "icons",
+                        "icon": "info",
+                        "text": "Une présentation des informations du site."
+                },
+                {
+                        "id": 6,
+                        "name": "Contact",
+                        "to": "/contact",
+                        "material": "icons",
+                        "icon": "alternate_email",
+                        "text": "Une page de contact.",
+                        "reseaux": [
+                                {
+                                        "id": 61,
+                                        "name": "github",
+                                        "link": "lien"
+                                }
+                        ]
+                }
+        ]
+}
