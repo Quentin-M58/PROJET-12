@@ -2,7 +2,7 @@
   PROJET 12<br />
  Quentin-M58<br />
   <img alt="En cours de Validation"
-       src="https://img.shields.io/badge/En%20cours%20de%20Validation-orange"><br />
+       src="https://img.shields.io/badge/Valider-green"><br />
   <img alt="REACT"
        src="https://img.shields.io/badge/REACT-darkgreen?style=for-the-badge">
        <img alt="SASS"
