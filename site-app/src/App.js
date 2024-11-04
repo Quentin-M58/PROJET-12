@@ -34,6 +34,6 @@ export default function App() {
           <Route path="*" element={<Erreur />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </BrowserRouter  >
   )
 }

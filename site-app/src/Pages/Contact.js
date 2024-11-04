@@ -6,7 +6,7 @@ import Data from "../Data/data.json"
 
 export default function Contact() {
         const reseaux = Data.link[5].reseaux
-        const [Msg, setMsg] = useState("test")
+        const [Msg, setMsg] = useState("votre message à été envoyer")
         const [Msgcheck, setMsgcheck] = useState("je n'autorise pas")
         const [modal, setModal] = useState(false)
         const form = useRef();
@@ -26,7 +26,7 @@ export default function Contact() {
 
                                 },
                                 (error) => {
-                                        setMsg(`Erreur votre message n'a pas pu être envoyé \n ${error.text}`);
+                                        setMsg(`Erreur votre message n'a pas pu être envoyé\r\nVeuillez Contacter\r\ncontact@quentin-m58.fr`);
                                         setTimeout(() => {
                                                 setModal(!modal)
                                         }, 100);
@@ -68,26 +68,26 @@ export default function Contact() {
                                         <div className={modal ? "modal active" : "modal"}>
                                                 <div className="modalmsg">
                                                         <p>{Msg}</p>
-                                                        <button onClick={closemodal}>ok</button>
+                                                        <button onClick={closemodal}>FERMER</button>
                                                 </div>
                                         </div>
                                         <div className="contactform">
                                                 <p>formulaire de contact</p>
                                                 <form onSubmit={sendEmail} ref={form}>
                                                         <label htmlFor="name">Nom*</label>
-                                                        <input className="input" type="text" autoCorrect="off" spellCheck="false" autoComplete="name" name="user_name" id="name" placeholder="Nom*" required />
+                                                        <input className="input" type="text" autoCorrect="off" spellCheck="false" autoComplete="name" name="user_name" id="name" placeholder="Nom*" />
                                                         <label htmlFor="email">Email*</label>
-                                                        <input className="input" type="email" autoCorrect="off" spellCheck="false" autoComplete="email" name="user_email" id="email" placeholder="Email*" required />
+                                                        <input className="input" type="email" autoCorrect="off" spellCheck="false" autoComplete="email" name="user_email" id="email" placeholder="Email*" />
                                                         <label htmlFor="object">Sujet*</label>
-                                                        <input className="input" type="text" autoCorrect="off" spellCheck="false" autoComplete="off" name="user_object" id="object" placeholder="Sujet*" required />
+                                                        <input className="input" type="text" autoCorrect="off" spellCheck="false" autoComplete="off" name="user_object" id="object" placeholder="Sujet*" />
                                                         <label htmlFor="message">Message*</label>
-                                                        <textarea name="message" id="message" autoCorrect="off" spellCheck="false" autoComplete="off" placeholder="Message*" required />
+                                                        <textarea name="message" id="message" autoCorrect="off" spellCheck="false" autoComplete="off" placeholder="Message*" />
                                                         <label className="check">
-                                                                <input type="checkbox" name="user_consent" required onClick={checkmsg} />
+                                                                <input type="checkbox" name="user_consent" onClick={checkmsg} />
                                                                 <p>{Msgcheck} le site à conserver et utiliser les données transmises via ce formulaire pour le traitement de mon message.*</p>
                                                         </label>
                                                         <p>*Champ Obligatoires</p>
-                                                        <input className="submit" type="submit" value="Envoyer" role="button" aria-pressed="false" />
+                                                        {/* <input className="submit" type="submit" value="Envoyer" role="button" aria-pressed="false" /> */}
                                                 </form>
                                         </div>
                                 </div>

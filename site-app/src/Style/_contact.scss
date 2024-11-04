@@ -61,9 +61,28 @@ div {
                                                                         flex-direction: column;
                                                                         justify-content: center;
                                                                         align-items: center;
-                                                                        height: 100%;
+                                                                        text-align: center;
                                                                         font-size: 2rem;
                                                                         gap: 20px;
+                                                                        white-space: pre-wrap;
+
+                                                                        @media #{$tel} {
+                                                                                width: 80vw;
+                                                                                height: 40vh;
+                                                                                top: 30%;
+                                                                                left: 10%;
+                                                                        }
+
+                                                                        button {
+                                                                                @include color(background-color, 10%);
+                                                                                @include color(--box-shadow-color, 10%);
+                                                                                border-radius: 45px;
+                                                                                box-shadow: outset 0px 0px 10px 10px var(--box-shadow-color);
+                                                                                text-transform: uppercase;
+                                                                                padding: 15px;
+                                                                                border: none;
+                                                                                font-size: 2rem;
+                                                                        }
                                                                 }
                                                         }
                                                 }
@@ -133,7 +152,8 @@ div {
                                                                                         }
                                                                                 }
                                                                         }
-                                                                        p{
+
+                                                                        p {
                                                                                 text-align: center;
                                                                         }
                                                                 }

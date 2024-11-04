@@ -39,7 +39,7 @@ export default function Navcontent({ onClose, View }) {
                                                 <div className="folder">
                                                         <p className="subfoldertitle">{Datasubfolder.name}</p>
                                                         <div className="subfolder">
-                                                                <CustomLink key={Datasubfolder.id} to={Datasubfolder.to} text={Datasubfolder.name} id={2} img="icon" />
+                                                                <CustomLink key={Datasubfolder.id} to={Datasubfolder.to} text={Datasubfolder.name} id={2} img="icon"/>
                                                                 {Datasubfolder.folder !== undefined ?
                                                                         Datasubfolder.folder.map((info) => {
                                                                                 return (

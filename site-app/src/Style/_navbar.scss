@@ -4,6 +4,10 @@ div {
                 position: relative;
                 height: calc(100vh - 70px);
 
+                @media #{$tel} {
+                        height: calc(100vh - 150px) !important;
+                }
+
                 div {
                         &.nav {
                                 display: flex;
@@ -82,7 +86,7 @@ div {
                                                         overflow-x: visible;
                                                         padding: 0px;
                                                         z-index: 0;
-                                                        height: 100vh;
+                                                        height: calc(100vh - 120px)
                                                 }
 
                                                 div {
@@ -256,7 +260,7 @@ div {
                                 height: calc(100vh - 70px) !important;
 
                                 @media #{$tel} {
-                                        height: calc(100vh - 150px) !important;
+                                        height: calc(100vh - 120px) !important;
                                 }
 
                                 >div {

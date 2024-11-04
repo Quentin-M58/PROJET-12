@@ -2,7 +2,7 @@
         "link": [
                 {
                         "id": 1,
-                        "name": "Acceuil",
+                        "name": "Accueil",
                         "to": "",
                         "material": "icons",
                         "icon": "home",
@@ -155,6 +155,7 @@
                                         "name": "Ohmyfood.sass",
                                         "filtre": [
                                                 "css 3",
+                                                "sass",
                                                 "dev"
                                         ],
                                         "projet-id": 4,
@@ -908,8 +909,8 @@
                                                 "invite de commande",
                                                 "langage informatique"
                                         ],
-                                        "name": "powershell",
-                                        "logo": "PowerShell",
+                                        "name": "PowerShell",
+                                        "logo": "powershell",
                                         "description": "Utilisation et creation de fichiers de commande sous POWERSHELL ",
                                         "level": "5",
                                         "link": [
@@ -1119,7 +1120,7 @@
                 },
                 {
                         "id": 5,
-                        "name": "Mention légal",
+                        "name": "Mention légales",
                         "to": "/terms",
                         "material": "icons",
                         "icon": "info",
